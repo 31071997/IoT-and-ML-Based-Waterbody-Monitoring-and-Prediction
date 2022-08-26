@@ -1,1 +1,17 @@
 # IoT-and-ML-Based-Waterbody-Monitoring-and-Prediction
+Problem: River and water bodies have a great influence on our environment, economy, transportation system, lifestyle and ecosystem. Growth in population, urbanization and industrialization, increasing number of motorized water vehicles, sedimentation, dams and other human created and natural causes effects the navigability and other important features of waterbodies. But there is no regular waterbody monitoring system available. It causes many of rivers losing their expected navigability and increases the portion of diluted and non-diluted toxic chemicals day by day causing frequent floods, problem in water transportation, water pollution, destroying water ecosystem etc. The intoxicated river water spreads various water carried diseases among human by both external contact and drinking, though drinking river water without purification is not very common thing but many people easily come to contact with water specially people like fisherman and voyagers and suffer from various skin diseases. The toxicity from chemicals is responsible for defunction of many water creatures as there living environment is spoiled by them. In a nutshell it can be said that, there are several human-created and environmental issues which are having direct and indirect effects on the waterbodies and these effects should be monitored strictly and be normalized with most proactive ways so that the modernization of our lives cannot affect our environment. Besides a modern life, a pollution-free healthy environment and hassle-free transportation system can make human life easier by observing, controlling and repairing the damage the waterbodies like rivers and lakes. But usually tracking the condition of enormous waterbodies is not an easy task and a huge number of well-trained employees will be required there though there will be many flaws left behind.        
+
+Solution: An automated routine monitoring to take the waterbody reading. The idea is creating an automated system that will take some data from waterbodies and the surrounding environment using some sensors and will be uploaded to database for further analysis. Those data can be monitored from the database and applying machine learning approaches on them and future condition of a waterbody can be predicted that can alert the responsible authorities about taking necessary steps to prevent damage.  
+A system will be developed which will predict the effect on other factors on navigability and predict the navigability after a short period of time. 
+
+Process:
+1.	A sonar senor will be used to take navigability readings in a regular interval.
+2.	A waterflow senor will be used to measure waterflow.
+3.	TDS, turbidity and ph sensors will be used to measure generic water qualities.
+4.	GPS will mark the locations of taken readings.
+5.	To collect the readings for surrounding an anemometer, rain gauge and DHT22 will be used.
+6.	This whole system will be divided into two blocks and run by two esp32 boards. 
+7.	Firebase realtime database will be used to store the data.
+8.	The data can be downloaded in json form and converted to CSV using json to CSV converter and for applying ml models on them.
+9.	Predicting navigability based on navigability before one month and other subsequent factors using prediction algoritms.
+10.	 Apply different machine leaning algorithms to find out Accuracy and MAE and finally, comparing the algorithms to find out which algorithm shows the most accurate result.
